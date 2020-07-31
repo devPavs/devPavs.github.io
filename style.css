@@ -973,17 +973,34 @@ a {
          margin-bottom: 20px;
      }
  }
-@media only screen and(min-width: 480px)
+@media all and (max-width: 1024px)
 {
-    .banner header .logo
-    {
-        font-size: 20px;
-    }
+    #menu-overlay ul li a
+{
+    position: relative;
+    text-decoration: none;
+    font-size: 2.5em;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
 }
-@media only screen and(min-width: 768px)
+.toggle
 {
-    .banner header .logo
-    {
-        font-size: 20px;
-    }
+    position: absolute;
+    top: 10px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+}
+.heading
+{
+    font-size: 16px;
+}
+.text
+{
+    font-size: 10px;
+}
 }
