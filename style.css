@@ -973,55 +973,17 @@ a {
          margin-bottom: 20px;
      }
  }
- @media only screen and(max-width: 320px)
- {
-    body
+@media only screen and(min-width: 480px)
+{
+    .banner header .logo
     {
-        overflow-x: scroll ;
+        font-size: 20px;
     }
-    .toggle
+}
+@media only screen and(min-width: 768px)
+{
+    .banner header .logo
     {
-        position: relative;
-        top: 10px;
-        right: 0px;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, -50%);
+        font-size: 20px;
     }
- }
- @media only screen and(max-width: 480px)
- {
-    .toggle
-    {
-        position: relative;
-        top: 10px;
-        right: 0px;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, -50%);
-    }
- }
- @media only screen and(max-width: 768px)
- {
-    .toggle
-    {
-        position: relative;
-        top: 10px;
-        right: 0px;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, -50%);
-    }
- }
- @media only screen and(max-width: 1024px)
- {
-    .toggle
-    {
-        position: relative;
-        top: 10px;
-        right: 0px;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, -50%);
-    }
- }
+}
