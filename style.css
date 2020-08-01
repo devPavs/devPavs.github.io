@@ -396,23 +396,22 @@ body
     background: grey;
     max-width: 100%;
     padding: 100px 100px 50px 100px;
-    display: flex;
-    display: block;
-    justify-content: center;
     align-items: center;
-}
-.products .heading
-{
-    position: relative;
-    text-align: center;
-}
-.products .text
-{
-    padding: 50px;
 }
 .products .contentBx
 {
     max-width: 800px;
+    position: relative;
+    text-align: center;
+}
+.products .heading
+{
+    text-align: center;
+}
+.products .text
+{
+    text-align: center;
+    padding: 50px 50px 50px 50px;
 }
 .products .imgBx
 {
@@ -563,13 +562,13 @@ a {
   }
   
   /* MEDIA QUERIES */
-  @media screen and (max-width: 1285px) {
+  @media all and (max-width: 1285px) {
     .cards-wrapper {
       grid-template-columns: 1fr 1fr;
     }
   }
   
-  @media screen and (max-width: 900px) {
+  @media all and (max-width: 900px) {
     .cards-wrapper {
       grid-template-columns: 1fr;
     }
@@ -582,16 +581,13 @@ a {
     }
   }
   
-  @media screen and (max-width: 500px) {
-    .cards-wrapper {
-      padding: 4rem 2rem;
-    }
+  @media all and (max-width: 500px) {
     .card {
       max-width: calc(100vw - 4rem);
     }
   }
   
-  @media screen and (max-width: 450px) {
+  @media all and (max-width: 450px) {
     .products .info {
       display: block;
       text-align: center;
@@ -643,14 +639,18 @@ a {
      right: 70px;
      bottom: 40px;  
  }
- .contacts
+ 
+    .contacts
  {
      position: relative;
      background: grey;
      padding: 30px 100px 100px 100px;
      display: flex;
-     justify-content: space-between;
      align-items: center;
+ }
+ .contacts .container
+ {
+    justify-content: space-between;
  }
  .contacts .text 
  {
@@ -670,6 +670,7 @@ a {
      max-width: 50%;
      text-align: center;
  }
+
  form
  {
      margin-top: 50px;
@@ -1035,5 +1036,80 @@ a {
     opacity: 0;
     transition: 0.5s;
     z-index: 100;
+}
+#popup1
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 5px 30px rgba(0,0,0, .30);
+    background: #d3d3d3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 100;
+}
+#popup2
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0 5px 30px rgba(0,0,0, .30);
+    background: #d3d3d3;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 100;
+}
+.services .container .serviceBx img
+{
+    max-width: 100px;
+    max-height: 110px;
+}
+.products .heading
+{
+        font-size: 24px;
+}
+.faq .contentBx
+{
+    width: 320px;
+    padding: 20px;
+    left: -20px;
+}
+.faq .contentBx div
+{
+   width: 200px;
+}
+.faq .bottone1
+{
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    top: 20px;
+}
+.contacts 
+{
+    position: relative;
+    background: grey;
+    padding: 30px 20px 20px 40px;
+    display: flex;
+    align-items: center;
+}
+.contacts .align-contacts
+{
+    max-width: 300px;
+}
+.contacts .container-info
+{
+    padding: 10px;
+    font-size: 14px;
 }
 }
