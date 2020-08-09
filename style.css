@@ -495,16 +495,6 @@ a {
     color: white;
   }
   
-  .card .date {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 0.75em;
-    padding: 1em;
-    line-height: 1em;
-    opacity: .8;
-  }
-  
   .card:before, .card:after {
     content: '';
     transform: scale(0);
@@ -1080,9 +1070,29 @@ a {
     max-width: 100px;
     max-height: 110px;
 }
+.products
+{
+    background: grey;
+    max-width: 100%;
+    padding: 50px 40px 50px 40px;
+    align-items: center;
+}
 .products .heading
 {
         font-size: 24px;
+}
+.products .text
+{
+    padding: 20px 0px 20px 0px;
+}
+.card-grid-space
+{
+    left: -70px;
+    padding: 0;
+}
+.products .bottone1
+{
+    text-align: center;
 }
 .faq .contentBx
 {
